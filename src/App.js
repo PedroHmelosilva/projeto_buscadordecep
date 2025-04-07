@@ -39,10 +39,10 @@ function App() {
       {Object.keys(cep).length > 0 && (
         <main className='main'>
           <h2>CEP: {cep.cep}</h2>
-          <span>Rua: {cep.logradouro}</span>
-          <span>Complemento: {cep.complemento}</span>
-          <span>Bairro: {cep.bairro}</span>
-          <span>{cep.localidade} -{cep.uf}</span>
+          <div className='line'><p>Rua: </p><span>{cep.logradouro}</span></div>
+          <div className='line'><p>Complemento: </p><span>{cep.complemento}</span></div>
+          <div className='line'><p>Bairro: </p><span>{cep.bairro}</span></div>
+          <div className='line'><p>Cidade: </p><span>{cep.localidade} -{cep.uf}</span></div>
         </main>
       )}
       <footer>
